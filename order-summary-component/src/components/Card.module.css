@@ -1,0 +1,8 @@
+.card {
+  background-color: var(--white);
+  max-width: 24rem;
+  width: 90vw;
+  margin: 0 1rem;
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+}

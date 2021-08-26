@@ -1,13 +1,56 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+*,
+*:after,
+*:before {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --white: hsl(0, 0%, 100%);
+  --primary-pale-blue: hsl(225, 100%, 94%);
+  --primary-bright-blue: hsl(245, 75%, 52%);
+  --neutral-pale-blue: hsl(225, 100%, 98%);
+  --neutral-blue: hsl(224, 23%, 55%);
+  --neutral-dark-blue: hsl(223, 47%, 23%);
+  --card-shadow: 0px 20px 50px -7px rgb(183, 191, 241);
+  --card-radius: 20px;
+}
+
+body {
+  margin: 0;
+  color: var(--neutral-blue);
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: var(--primary-pale-blue);
+}
+
+@media only screen and (min-width: 475px) {
+  body {
+    background-image: url("./images/pattern-background-desktop.svg");
+  }
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h3,
+h4 {
+  color: var(--neutral-dark-blue);
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 900;
 }
