@@ -22,6 +22,7 @@
   --white: hsl(0, 0%, 100%);
   --primary-pale-blue: hsl(225, 100%, 94%);
   --primary-bright-blue: hsl(245, 75%, 52%);
+  --primary-birght-hover: hsl(245deg 75% 52% / 69%);
   --neutral-pale-blue: hsl(225, 100%, 98%);
   --neutral-blue: hsl(224, 23%, 55%);
   --neutral-dark-blue: hsl(223, 47%, 23%);
@@ -73,4 +74,13 @@ button {
 p {
   line-height: 1.75rem;
   font-weight: 500;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--primary-bright-blue);
+  font-weight: 700;
+}
+
+a:hover {
 }
