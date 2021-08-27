@@ -69,3 +69,8 @@ button {
   padding: 1rem;
   font-weight: 700;
 }
+
+p {
+  line-height: 1.75rem;
+  font-weight: 500;
+}
