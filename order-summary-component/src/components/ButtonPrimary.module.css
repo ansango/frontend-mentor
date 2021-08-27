@@ -1,0 +1,6 @@
+.btnPrimary {
+  background-color: var(--primary-bright-blue);
+  border-radius: var(--card-radius-elements);
+  box-shadow: var(--button-shadow);
+  color: var(--white);
+}

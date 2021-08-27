@@ -1,5 +1,7 @@
 import style from "./CardBody.module.css";
 import icon from "../images/icon-music.svg";
+import { ButtonPrimary } from "./ButtonPrimary";
+import { ButtonBlank } from "./ButtonBlank";
 
 export const CardBody = () => {
   return (
@@ -17,9 +19,9 @@ export const CardBody = () => {
         </div>
         <a>Change</a>
       </div>
-          <div className={style.actions}>
-        <button>Proceed to Payment</button>
-        <button>Cancel Order</button>
+      <div className={style.actions}>
+        <ButtonPrimary label="Proceed to Payment" />
+        <ButtonBlank label="Cancel Order" />
       </div>
     </div>
   );

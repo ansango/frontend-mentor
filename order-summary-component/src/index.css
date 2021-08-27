@@ -8,6 +8,14 @@
   box-sizing: border-box;
   font-family: "Red Hat Display", sans-serif;
   font-size: 1rem;
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  border-spacing: 0;
+  list-style: none outside none;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+  color: var(--neutral-blue);
 }
 
 :root {
@@ -17,13 +25,14 @@
   --neutral-pale-blue: hsl(225, 100%, 98%);
   --neutral-blue: hsl(224, 23%, 55%);
   --neutral-dark-blue: hsl(223, 47%, 23%);
-  --card-shadow: 0px 20px 50px -7px rgb(183, 191, 241);
-  --card-radius: 20px;
+  --shadow: rgb(183, 191, 241);
+  --card-shadow: 0px 20px 50px -7px var(--shadow);
+  --card-radius: 1.25rem;
+  --card-radius-elements: 0.75rem;
+  --button-shadow: 0px 10px 11px 1px var(--shadow);
 }
 
 body {
-  margin: 0;
-  color: var(--neutral-blue);
   background-image: url("./images/pattern-background-mobile.svg");
   background-position: top;
   background-size: 100%;
@@ -53,4 +62,10 @@ h4 {
 h3 {
   font-size: 1.2rem;
   font-weight: 900;
+}
+
+button {
+  text-align: center;
+  padding: 1rem;
+  font-weight: 700;
 }
